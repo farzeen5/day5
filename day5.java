@@ -1,18 +1,18 @@
 package day5;
-
+import java.util.Scanner;
 public class day5 {
 
 	public static void main(String[] args) {
-		 double n1 = -4.5, n2 = 3.9, n3 = 2.5;
-
-	        if( n1 >= n2 && n1 >= n3)
-	            System.out.println(n1 + " is the largest number.");
-
-	        else if (n2 >= n1 && n2 >= n3)
-	            System.out.println(n2 + " is the largest number.");
-
-	        else
-	            System.out.println(n3 + " is the largest number.");
+		int number, square;
+		Scanner reader = new Scanner(System.in);
+		
+		System.out.print(" Please Enter any Number : ");
+		number = reader.nextInt();		
+		
+		square = number * number;
+		
+		System.out.println(" The Square of a Given Number  " + number + "  =  " + square);
+	
 
 	}
 
