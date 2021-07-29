@@ -1,19 +1,21 @@
 package day5;
+
 import java.util.Scanner;
+
 public class day5 {
 
 	public static void main(String[] args) {
-		int number, square;
+		int year;
 		Scanner reader = new Scanner(System.in);
-		
-		System.out.print(" Please Enter any Number : ");
-		number = reader.nextInt();		
-		
-		square = number * number;
-		
-		System.out.println(" The Square of a Given Number  " + number + "  =  " + square);
-	
+
+		System.out.println(" Please Enter any year : ");
+		year = reader.nextInt();
+
+		if (year % 4 == 0) {
+			System.out.format("is a Leap Year. ", +year);
+		} else {
+			System.out.format("is NOT a Leap Year. ", +year);
+		}
 
 	}
-
 }
