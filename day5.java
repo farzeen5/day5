@@ -5,17 +5,19 @@ import java.util.Scanner;
 public class day5 {
 
 	public static void main(String[] args) {
-		int year;
-		Scanner reader = new Scanner(System.in);
-
-		System.out.println(" Please Enter any year : ");
-		year = reader.nextInt();
-
-		if (year % 4 == 0) {
-			System.out.format("is a Leap Year. ", +year);
-		} else {
-			System.out.format("is NOT a Leap Year. ", +year);
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a character : ");
+		char ch=sc.next( ).charAt(0);
+		
+		if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+		{
+		System.out.println("Entered character "+ch+" is  Vowel"); 
 		}
-
-	}
+		else if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+			System.out.println("Entered character "+ch+" is Consonant");
+		      else
+			System.out.println("Not an alphabet");		
+		}
+	
 }
